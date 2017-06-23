@@ -10,15 +10,15 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!---jquery link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!--css style sheet link-->
-<!--<link rel="stylesheet" type="text/css"  style.css>  -->
 
 </head>
 <body>
 
 <div class="jumbotron">
-  <div class="container">
+  <div class="container text-center">
 
 <h1>New York Times Search</h1>
 
@@ -40,55 +40,29 @@
     <label for="searchTerm">Search Term </label>
     <input type="text" class="form-control" id="searchTerm" aria-describedby="search term" placeholder="Enter Your Search Term">
       </div>
+
   <div class="form-group">
-    <label for="exampleInputPassword1">Number of Records</label>
-    <input type="text" class="form-control" id="numberRecords" placeholder="Number of Records to Collect">
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect1">Example select</label>
+    <label for="exampleSelect1">Number of Records</label>
     <select class="form-control" id="exampleSelect1">
       <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
       <option>5</option>
+      <option>10</option>
     </select>
   </div>
 
 
-
-			<!--number of records div-->
-			<div id="numberRecords">
-				record info 
-			</div>
-
-			<!--number of records to retrive drop-down menu-->
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Number of Records 
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">1</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">10</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-
-
-			<!--start uear div-->
-			<div id="startYear">
-				start year 
-			</div>
+			<!--start year div-->
+ 		  <div class="form-group">
+    <label for="startYear">Start Year</label>
+    <input type="text" class="form-control" id="startYear" aria-describedby="search term" placeholder="Enter Your Start Year">
+      </div>
 
 			<!--end year div--> 
-		
-			<div id="endYear">
-				end year 
-			</div>
 
+ 		  <div class="form-group">
+    <label for="startYear">End Year</label>
+    <input type="text" class="form-control" id="endYear" aria-describedby="search term" placeholder="Enter Your End Year">
+      </div>
 <!--search and clear buttons-->  
 
 <button type="button" class="btn btn-primary" id="searchButton">Search</button>
@@ -98,42 +72,35 @@
 
 
 		</form><!--ends the form div-->
+		</div>
+
+
+</div>
+
+
 
 
   </div>
-</div>
+
+
+
 
 <!-- top articles div--> 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Top Articles</h3>
   </div>
-  <div class="panel-body">
-    Panel content
-
-	
-		</div><!--ends the top articles div-->
+  <div class="panel-body" id="topArticles">
+    
 
 
-		
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			</div><!--ends the top articles div-->
 
 </div><!--ends the container-fluid div-->	
+
+<script type="text/javascript"></script>
 </body>
+
+
+
 </html>
